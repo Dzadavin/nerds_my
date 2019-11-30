@@ -2,14 +2,17 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>NЁRDS DESIGN STUDIO</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
   </head>
   <body>
 
     <header class="main-header">
       <nav class="site-navigation">
         <a class="main-logo">
-          <img src="" title="Nerds design studio">
+          <img src="img/nerds-logo.svg" title="Nerds design studio">
         </a>
         <ul class="main-navigation">
           <li class="navigation-item"><a href="#">Студия</a></li>
@@ -27,64 +30,66 @@
       <h1 class="visually-hidden">Магазин готовых шаблонов</h1>
 
       <section class="slider">
-        <div class="slider-first">
-          <div class="slider-first-left"
-            <b>Долго, дорого, скрупулезно.</b>
-            <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-            <a class="button button-red">Узнать больше</a>
-          </div>
-          <div class="slider-first-right">
-            <img>
-            <button class="button-round"></button>
-            <button class="button-round"></button>
-            <button class="button-round"></button>
-          </div>
-        </div>
-        <div class="slider-second">
-          <div class="slider-second-left"
-            <b>Любим математику как никто другой</b>
-            <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-            <a class="button button-red">Узнать больше</a>
-          </div>
-          <div class="slider-second-right">
-            <img>
-            <button class="button-round"></button>
-            <button class="button-round"></button>
-            <button class="button-round"></button>
-          </div>
-        </div>
-        <div class="slider-third">
-          <div class="slider-third-left"
-            <b>Только ночь, только хардкор</b>
-            <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-            <a class="button button-red">Узнать больше</a>
-          </div>
-          <div class="slider-third-right">
-            <img>
-            <button class="button-round"></button>
-            <button class="button-round"></button>
-            <button class="button-round"></button>
-          </div>
-        </div>
+        <ul class="slider-list">
+          <li class="slider-item">
+            <div class="slider-item-left">
+              <b>Долго, дорого, скрупулезно.</b>
+              <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+              <a class="button button-red">Узнать больше</a>
+            </div>
+            <div class="slider-item-right">
+              <button class="button-round"></button>
+              <button class="button-round"></button>
+              <button class="button-round"></button>
+            </div>
+          </li>
+          <li class="slider-item">
+            <div class="slider-item-left"
+              <b>Любим математику как никто другой</b>
+              <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+              <a class="button button-red">Узнать больше</a>
+            </div>
+            <div class="slider-item-right">
+              <button class="button-round"></button>
+              <button class="button-round"></button>
+              <button class="button-round"></button>
+            </div>
+          </li>
+          <li class="slider-item">
+            <div class="slider-item-left"
+              <b>Только ночь, только хардкор</b>
+              <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+              <a class="button button-red">Узнать больше</a>
+            </div>
+            <div class="slider-item-right">
+              <button class="button-round"></button>
+              <button class="button-round"></button>
+              <button class="button-round"></button>
+            </div>
+          </li>
+        </ul>
       </section>
 
       <section class="service">
         <h2 class="visually-hidden">Наши сервисы</h2>
         <ul class="service-list">
           <li class="service-item">
-            <p class="service-image"><img></p>
+            <p class="service-image"><img src="img/illustration-1.jpg" width="300px" height="146px"
+              alt="Веб-сайты"></p>
             <h3 class="service-name">Веб-сайты</h3>
             <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
             <a class="button button-red"></a>
           </li>
           <li class="service-item">
-            <p class="service-image"><img></p>
+            <p class="service-image"><img src="img/illustration-2.jpg" width="300px" height="146px"
+              alt="Приложения"></p>
             <h3 class="service-name">Приложения</h3>
             <p>Покорите топ-10 приложений в AppStore и Google Play</p>
             <a class="button button-green"></a>
           </li>
           <li class="service-item">
-            <p class="service-image"><img></p>
+            <p class="service-image"><img src="img/illustration-3.jpg" width="300px" height="146px"
+              alt="Презентации"></p>
             <h3 class="service-name">Презентации</h3>
             <p>Вы даже не подозреваете, насколько вы изумительны!</p>
             <a class="button button-yellow"></a>
@@ -106,7 +111,7 @@
           </ul>
         </div>
         <div class="about-right-side">
-          <figure></figure>
+          <p><img src="img/nerds-illustration.jpg" width="360px" height="208px" alt="NЁRDS DESIGN STUDIO"></p>
           <table class="about-table">
             <caption>с 2004 года Любим точность во всем:</caption>
             <tr>
@@ -126,10 +131,18 @@
       <section class="partners">
         <h2 class="visually-hidden">Наши партнеры</h2>
         <ul class="partners-list">
-          <li class="partners-item">html-academy</li>
-          <li class="partners-item">barbershop "borodinski"</li>
-          <li class="partners-item">pink</li>
-          <li class="partners-item">mishka</li>
+          <li class="partners-item">
+            <span class="visually-hidden">html-academy</span>
+          </li>
+          <li class="partners-item">
+            <span class="visually-hidden">barbershop "borodinski"</span>
+          </li>
+          <li class="partners-item">
+            <span class="visually-hidden">pink</span>
+          </li>
+          <li class="partners-item">
+            <span class="visually-hidden">mishka</span>
+          </li>
         </ul>
       </section>
     </main>
