@@ -25,36 +25,127 @@
     <main class="container">
       <h1>Магазин готовых шаблонов</h1>
       <section class="filter">
-        <h2>Стоимость:</h2>
-        <!--form here
-        <div class="range-controls">
-							<div class="scale">
-								<div class="bar"></div>
-							</div>
-							<div class="range-toggle range-toggle-min"></div>
-							<div class="range-toggle range-toggle-max"></div>
-						</div>-->
+        <h2 class="visually-hidden">Фильтр</h2>
+        <form action="http://echo.htmlacademy.ru" method="post">
+          <fieldset class="filter-field filter-cost">
+            <legend>Стоимость:</legend>
+            <div class="range-controls">
+    							<div class="scale">
+    								<div class="bar"></div>
+    							</div>
+    							<div class="range-toggle range-toggle-min"></div>
+    							<div class="range-toggle range-toggle-max"></div>
+    				</div>
+            <label for="from">От</label>
+            <output id="from" name="out-from">0</output>
+            <label for="to">До</label>
+            <output id="to" name="out-to">15000</output>
+          </fieldset>
+          <fieldset class="filter-field filter-grid">
+            <legend>Сетка:</legend>
+            <input type="radio" class="visually-hidden" id="adapted" name="grid" value="adapted" checked>
+            <label for="adapted">Адаптивная</label>
+            <input type="radio" class="visually-hidden" id="fixed" name="grid" value="fixed">
+            <label for="fixed">Фиксированная</label>
+            <input type="radio" class="visually-hidden" id="rubber" name="grid" value="rubber">
+            <label for="rubber">Резиновая</label>
+          </fieldset>
+          <fieldset class="filter-field filter-features">
+            <legend>Особенности:</legend>
+            <input type="checkbox" id="id_slider" name="slider" class="visually-hidden" checked>
+            <label for="id_slider">Слайдер</label>
+            <input type="checkbox" id="id_features" name="features" class="visually-hidden">
+            <label for="id_features">Блок преимуществ</label>
+            <input type="checkbox" id="id_news" name="news" class="visually-hidden" checked>
+            <label for="id_news">Новости</label>
+            <input type="checkbox" id="id_gallery" name="gallery" class="visually-hidden">
+            <label for="id_gallery">Галерея</label>
+            <input type="checkbox" id="id_cart" name="cart" class="visually-hidden">
+            <label for="id_cart">Корзина</label>
+          </fieldset>
+          <button class="submit button button-grey">Показать</button>
+        </form>
       </section>
 
-      <section class="sort">
-        <h3 class="sort-list">Сортировать:</h3>
-        <div class="right-side">
-          <a class="sort-button sort-current">По цене</a>
-          <a class="sort-button" href="#">По типу</a>
-          <a class="sort-button" href="#">По названию</a>
-          <a class="sort-button" href="#">вниз</a>
-          <a class="sort-button" href="#">вверх</a>
+
+
+      <section class="templates">
+        <div class="templates-sort">
+          <h3 class="sort-list">Сортировать:</h3>
+          <div class="right-side">
+            <a class="sort-button sort-current">По цене</a>
+            <a class="sort-button" href="#">По типу</a>
+            <a class="sort-button" href="#">По названию</a>
+            <a class="sort-button" href="#">вниз</a>
+            <a class="sort-button" href="#">вверх</a>
+          </div>
         </div>
-      </section>
 
-      <section class="shablones">
-        <!--pages-->
-        <ul class="pages">
-          <li class="pages-item pages-current"><a>1</a></li>
-          <li class="pages-item"><a href="#">2</a></li>
-          <li class="pages-item"><a href="#">3</a></li>
-          <li class="pages-item"><a href="#">Следующая</a></li>
+        <ul class="templates-list">
+          <li class="templates-item">
+            <img src="img/2/browser.png" alt="Sedona">
+            <img src="img/2/img-sedona.png" alt="Sedona">
+            <div class="info">
+              <h3>Sedona</h3>
+              <p>Информационный сайт для туристов</p>
+              <button class="button button-red" type="button">9 900 руб.</button>
+            </div>
+          </li>
+          <li class="templates-item">
+            <img src="img/2/browser.png" alt="Pink app">
+            <img src="img/2/img-pink.png" alt="Pink app">
+            <div class="info">
+              <h3>Pink app</h3>
+              <p>Продуктовый лендинг приложения для iOS и Android</p>
+              <button class="button button-red" type="button">9 900 руб.</button>
+            </div>
+          </li>
+          <li class="templates-item">
+            <img src="img/2/browser.png" alt="Barbershop">
+            <img src="img/2/img-barbershop.png" alt="Barbershop">
+            <div class="info">
+              <h3>Barbershop</h3>
+              <p>Сайт салоны красоты. Для мужчин, да.</p>
+              <button class="button button-red" type="button">9 900 руб.</button>
+            </div>
+          </li>
+          <li class="templates-item">
+            <img src="img/2/browser.png" alt="Mishka">
+            <img src="img/2/img-mishka.png" alt="Mishka">
+            <div class="info">
+              <h3>Mishka</h3>
+              <p>Интернет-магазин вязаных игрушек</p>
+              <button class="button button-red" type="button">9 900 руб.</button>
+            </div>
+          </li>
+          <li class="templates-item">
+            <img src="img/2/browser.png" alt="A plus">
+            <img src="img/2/img-aplus.png" alt="A plus">
+            <div class="info">
+              <h3>A plus</h3>
+              <p>Лендинг курсов повышения квалификации</p>
+              <button class="button button-red" type="button">9 900 руб.</button>
+            </div>
+          </li>
+          <li class="templates-item">
+            <img src="img/2/browser.png" alt="Кваст">
+            <img src="img/2/img-kvast.png" alt="Кваст">
+            <div class="info">
+              <h3>Кваст</h3>
+              <p>Промо-сайт производителя крафтового кваса</p>
+              <button class="button button-red" type="button">9 900 руб.</button>
+            </div>
+          </li>
         </ul>
+
+        <div class="templates-pages">
+          <ul class="pages-list">
+            <li class="pages-item pages-current"><a>1</a></li>
+            <li class="pages-item"><a href="#">2</a></li>
+            <li class="pages-item"><a href="#">3</a></li>
+            <li class="pages-item"><a href="#">Следующая</a></li>
+          </ul>
+        </div>
       </section>
     </main>
 
@@ -84,5 +175,21 @@
         </div>
       </section>
     </footer>
+
+    <section class="modal write-us">
+      <form class="write-form" action="http://echo.htmlacademy.ru" method="post">
+        <h2 class="visually-hidden">Обратная связь</h2>
+        <h3>Напишите нам</h3>
+        <label for="name-id">Ваше имя:</label>
+        <input type="text" id="name-id" name="your_name" placeholder="Имя Фамилия">
+        <label for="email">Ваш e-mail:</label>
+        <input type="email" id="email" name="your_email" placeholder="email@example.com">
+        <label for="about">Текст письма:</label>
+        <textarea id="about" name="about_you" rows="5" placeholder="В свободной форме"></textarea>
+        <button type="submit" class="button button-red">Отправить</button>
+      </form>
+      <button class="button-close">Закрыть</button>
+    </section>
+
   </body>
 </html>
