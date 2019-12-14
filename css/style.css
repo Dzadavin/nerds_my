@@ -61,6 +61,7 @@ h1.main-name {
   background-image: url("../img/contacts.png");
   background-repeat: no-repeat;
   background-position: center;
+  margin-bottom: 60px;
 }
 .contacts-our {
   display: inline-block;
@@ -92,7 +93,6 @@ h1.main-name {
 .main-header {
   background-color: #eee;
   color: #000;
-  padding-top: 49px;
   margin-bottom: 80px;
 }
 .container {
@@ -100,12 +100,15 @@ h1.main-name {
   margin: auto;
 }
 .site-navigation {
+  padding-top: 20px;
   margin-bottom: 18px;
 }
 .main-header .main-navigation,
 .main-header .user-navigation {
-  padding-top: 27px;
-  padding-bottom: 12px;
+  margin: 0;
+  padding: 0;
+  padding-top: 26px;
+
 }
 .site-navigation img:hover {
   opacity: 80%;
@@ -119,6 +122,10 @@ h1.main-name {
   font-size: 16px;
   line-height: 30px;
   color: #000;
+}
+.site-navigation a:first-child {
+  height: 65px;
+  width: 160px;
 }
 .main-navigation a:hover,
 .user-navigation a:hover {
@@ -141,13 +148,23 @@ h1.main-name {
 }
 .slider .slider-list {
   list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.slider-item-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 .slider-item-left b {
   font-size: 55px;
   line-height: 55px;
+  margin-top: 58px;
   margin-bottom: 26px;
 }
 .slider-item-left p {
+  margin: 0;
+  padding: 0;
   font-size: 16px;
   line-height: 24px;
   margin-bottom: 42px;
@@ -161,60 +178,94 @@ h1.main-name {
   margin-bottom: 80px;
 }
 .service-item .service-image {
+  margin: 0;
+  padding: 0;
+  width: 300px;
+  height: 146px;
   margin-bottom: 23px;
 }
-.service-item h3 {
+.service-name {
   padding: 0;
   margin: 0;
   margin-bottom: 22px;
   font-size: 24px;
   line-height: 30px;
+  text-transform: uppercase;
 }
 .service-item .service-description {
+  width: 260px;
   font-size: 16px;
   line-height: 24px;
-  margin-bottom: 36px;
+  margin: 0;
+  margin-bottom: 32px;
 }
-.service-item .button {
-  margin-bottom: 80px;
-}
+/* .service-item .button {
+  margin-bottom: 90px;
+}  */
 .about-left-side .about-bold {
   font-size: 45px;
   line-height: 45px;
+  margin-block-start: 35px;
   margin-bottom: 32px;
 }
 .about-left-side .about-description {
-  margin-bottom: 42px;
+  margin-bottom: 36px;
 }
 .about-left-side .about-services {
   text-transform: uppercase;
+  font-size: 16px;
+  line-height: 24px;
   font-weight: bold;
-  margin-bottom: 28px;
+  margin: 0;
+  margin-bottom: 26px;
 }
 .about-left-side .about-list {
   list-style: none;
+  padding-left: 36px;
+  margin-bottom: 72px;
 }
 .about-list li {
-  margin-bottom: 28px;
-}
-.about-list ul {
-  margin-bottom: 72px;
+  margin-bottom: 26px;
 }
 .about-us {
   border-bottom: 2px solid #eee;
+  display: flex;
+  justify-content: space-between;
+}
+.about-left-side {
+  width: 660px;
+  /* margin-inline-start: 40px; */
+}
+.about-right-side {
+  width: 360px;
 }
 .about-right-side p {
+  margin: 0;
+  padding: 0;
+  width: 360px;
+  height: 208px;
   margin-bottom: 36px;
+}
+.about-table {
+ border-collapse: collapse;
 }
 .about-right-side caption {
   font-weight: bold;
   text-transform: uppercase;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 .about-percent {
   font-size: 45px;
-  line-height: 55px;
+  line-height: 45px;
   font-weight: bold;
+  padding-right: 20px;
+
+}
+.about-percent sup {
+  font-size: 28px;
+}
+.about-features {
+  padding-top: 16px;
 }
 .about-table tr:first-child {
   margin-bottom: 26px;
@@ -229,20 +280,33 @@ h1.main-name {
 }
 .partners .partners-list {
   list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
 }
-.partners-list .partners-item:first-child,
+.partners-list .partners-item:first-child {
+  width: 278px;
+  height: 180px;
+}
 .partners-list .partners-item:last-child {
   width: 280px;
   height: 180px;
 }
 .partners-list .partners-item:nth-child(2),
 .partners-list .partners-item:nth-child(3) {
-  width: 300px;
+  width: 298px;
   height: 180px;
+}
+.partners-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .partners-item a {
   cursor: pointer;
   opacity: 20%;
+  display: inline-block;
 }
 .partners-item a:hover {
   opacity: 100%;
@@ -254,7 +318,7 @@ a.button {
   font-size: 16px;
   line-height: 18px;
   padding: 0;
-  padding: 20px 40px;
+  padding: 15px 40px;
   cursor: pointer;
   border: none;
 }
@@ -300,9 +364,19 @@ a.button {
 .social {
   margin: 0 auto;
   width: 1160px;
+  height: 100px;
+  display: flex;
+}
+.social-left {
+  width: 316px;
+  height: 78px;
+  margin-right: 84px;
+  align-self: flex-start;
 }
 .social-buttons {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 .social-buttons li {
   display: inline-block;
@@ -310,6 +384,7 @@ a.button {
   width: 78px;
   height: 78px;
   border-radius: 50%;
+  margin-right: 12px;
 }
 .social-button a {
   display: inline-block;
@@ -345,6 +420,23 @@ a.button {
 }
 .social-button:active path {
   fill: #e37376;
+}
+.social-right {
+align-self: flex-start;
+}
+.social-right b {
+  font-size: 36px;
+  line-height: 56px;
+  font-weight: bold;
+  vertical-align: middle;
+  /* margin-bottom: 32px; */
+}
+.social-right p {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: normal;
 }
 .write-us {
   width: 960px;
@@ -549,4 +641,48 @@ section.templates a.sort-button:nth-child(4) {
 .pages-item.pages-next a{
   width: 246px;
   height: 44px;
+}
+/*==================NET========================*/
+.slider-item:nth-child(2),
+.slider-item:last-child {
+  display: none;
+}
+.main-header .site-navigation {
+  display: flex;
+  justify-content: space-between;
+}
+.main-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.main-header .user-navigation {
+  width: 160px;
+  text-align: right;
+}
+.main-header .main-navigation {
+  width: 440px;
+}
+.slider-item {
+  display: flex;
+  justify-content: flex-start;
+}
+.slider-item-left {
+  width: 430px;
+}
+.service-list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  padding: 0;
+}
+.service-item {
+  width: 300px;
+  margin-right: 100px;
+  /* flex-shrink: 0; */
+  /* border: 1px dotted red; */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
