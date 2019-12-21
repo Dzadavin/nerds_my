@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
   </head>
   <body>
-    <header class="main-header">
+    <header class="main-header inner-page">
       <div class="container">
         <nav class="site-navigation">
           <a class="main-logo" href="index.html">
@@ -36,15 +36,19 @@
             <legend>Стоимость:</legend>
             <div class="range-controls">
     							<div class="scale">
-    								<div class="bar"></div>
+    								<div class="bar">
+                      <div class="range-toggle range-toggle-min"></div>
+        							<div class="range-toggle range-toggle-max"></div>
+                    </div>
     							</div>
-    							<div class="range-toggle range-toggle-min"></div>
-    							<div class="range-toggle range-toggle-max"></div>
+
     				</div>
-            <label for="from">От</label>
-            <output id="from" name="out-from">0</output>
-            <label for="to">До</label>
-            <output id="to" name="out-to">15000</output>
+            <div class="range-controls-output">
+              <label for="from">От</label>
+              <output id="from" name="out-from">0</output>
+              <label for="to">До</label>
+              <output id="to" name="out-to">15000</output>
+            </div>
           </fieldset>
           <fieldset class="filter-field filter-grid">
             <legend>Сетка:</legend>
@@ -92,8 +96,6 @@
         </form>
       </section>
 
-
-
       <section class="templates">
         <div class="templates-sort">
           <h3 class="sort-list">Сортировать:</h3>
@@ -112,14 +114,13 @@
           </div>
         </div>
 
-
         <ul class="templates-list">
           <li class="templates-item">
             <img src="img/2/browser.png" alt="Sedona">
             <img src="img/2/img-sedona.png" alt="Sedona">
             <div class="info">
               <h3>Sedona</h3>
-              <p>Информационный сайт для туристов</p>
+              <p>Информационный сайт<br> для туристов</p>
               <a class="button button-red" type="button">9 900 руб.</a>
             </div>
           </li>
@@ -128,7 +129,7 @@
             <img src="img/2/img-pink.png" alt="Pink app">
             <div class="info">
               <h3>Pink app</h3>
-              <p>Продуктовый лендинг приложения для iOS и Android</p>
+              <p>Продуктовый лендинг<br> приложения для iOS и Android</p>
               <a class="button button-red" type="button">9 900 руб.</a>
             </div>
           </li>
@@ -137,7 +138,7 @@
             <img src="img/2/img-barbershop.png" alt="Barbershop">
             <div class="info">
               <h3>Barbershop</h3>
-              <p>Сайт салоны красоты. Для мужчин, да.</p>
+              <p>Сайт салоны красоты.<br> Для мужчин, да.</p>
               <a class="button button-red" type="button">9 900 руб.</a>
             </div>
           </li>
@@ -146,7 +147,7 @@
             <img src="img/2/img-mishka.png" alt="Mishka">
             <div class="info">
               <h3>Mishka</h3>
-              <p>Интернет-магазин вязаных игрушек</p>
+              <p>Интернет-магазин<br> вязаных игрушек</p>
               <a class="button button-red" type="button">9 900 руб.</a>
             </div>
           </li>
@@ -155,7 +156,7 @@
             <img src="img/2/img-aplus.png" alt="A plus">
             <div class="info">
               <h3>A plus</h3>
-              <p>Лендинг курсов повышения квалификации</p>
+              <p>Лендинг курсов<br> повышения квалификации</p>
               <a class="button button-red" type="button">9 900 руб.</a>
             </div>
           </li>
@@ -164,7 +165,7 @@
             <img src="img/2/img-kvast.png" alt="Кваст">
             <div class="info">
               <h3>Кваст</h3>
-              <p>Промо-сайт производителя крафтового кваса</p>
+              <p>Промо-сайт производителя<br> крафтового кваса</p>
               <a class="button button-red" type="button">9 900 руб.</a>
             </div>
           </li>
