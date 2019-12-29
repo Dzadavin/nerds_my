@@ -248,16 +248,23 @@
       <form class="write-form" action="http://echo.htmlacademy.ru" method="post">
         <h2 class="visually-hidden">Обратная связь</h2>
         <h3>Напишите нам</h3>
-        <label for="name-id">Ваше имя:</label><br>
-        <input type="text" id="name-id" name="your_name" placeholder="Имя Фамилия"><br>
-        <label for="email">Ваш e-mail:</label><br>
-        <input type="email" id="email" name="your_email" placeholder="email@example.com"><br>
-        <label for="about">Текст письма:</label><br>
+        <div class="write-us-wrapper">
+          <div class="half-width">
+            <label for="name-id">Ваше имя:</label>
+            <input type="text" id="name-id" name="your_name" placeholder="Имя Фамилия">
+          </div>
+          <div class="half-width">
+            <label for="email">Ваш e-mail:</label>
+            <input type="email" id="email" name="your_email" placeholder="email@example.com">
+          </div>
+        </div>
+        <label for="about">Текст письма:</label>
         <textarea id="about" name="about_you" rows="5" placeholder="В свободной форме"></textarea><br>
         <button type="submit" class="button button-red">Отправить</button>
     </form>
-    <button class="button-close">Закрыть</button>
+    <button class="button-close"><span class="visually-hidden">Закрыть</span></button>
     </section>
+    <div class="modal-overlay"></div>
 
   </body>
 </html>
